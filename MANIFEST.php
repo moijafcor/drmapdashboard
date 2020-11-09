@@ -1,0 +1,290 @@
+<?php
+/**
+* @version      $Id: 'MANIFEST.php' 29-08-2007 18:05:00 Moises Jafet$
+* @package      "[:DRmap(WebGUI):]"
+* @copyright    Copyright (C) 2007 Moises Jafet Cornelio-Vargas. All rights reserved.
+* @license      GNU/GPL, see LICENSE.TXT
+*
+* [:DRmap(WebGUI):] is free software; you can redistribute it and/or modify it under the
+* terms of the GNU General Public License as published by the Free Software Foundation;
+* either version 3 of the License, or any later version. As distributed it includes or
+* is derivative of works licensed under the GNU General Public License or other free
+* or open source software licenses.
+*
+* [:DRmap(WebGUI):] is distributed in the hope that it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+* PARTICULAR PURPOSE.  See the GNU General Public License for more details and
+* COPYRIGHT.TXT for copyright notices and details.
+*/
+
+defined( '_VALID_CPTICRD' ) or die( 'Prohibido el Acesso a este Recurso' );
+?>
+
+Lista de ficheros y directorios de esta distribucion |Comprehensive files and directories
+list on this distribution:
+
+buscador.php
+DR-map-Web-GUI.sql
+CHANGELOG.php
+CHECKSUM.php
+configuracion.php
+COPYRIGHT.php
+BannerMapa.gif
+FAQ.php
+favicon.ico
+index.php
+index2.php
+index3.php
+INSTALAR.php
+INSTALL.php
+LEAME.php
+LICENSE.php
+MANIFEST.php
+DR-map-Web-GUI.png
+DR-map-Web-GUI.xml
+robots.txt
+administrador/
+	calendar.html
+	demon-alcance.php
+	demon-alcance2.php
+	demon-alcance3.php
+	demon-areas.php
+	demon-areas2.php
+	demon-areas3.php
+	demon-blanco.php
+	demon-blanco2.php
+	demon-blanco3.php
+	demon-clas.php
+	demon-clas2.php
+	demon-clas3.php
+	demon-dist.php
+	demon-dist2.php
+	demon-dist3.php
+	demon-estatus.php
+	demon-estatus2.php
+	demon-estatus3.php
+	demon-inst.php
+	demon-inst2.php
+	demon-inst3.php
+	demon-instipo.php
+	demon-instipo2.php
+	demon-instipo3.php
+	demon-protic.php
+	demon-protic2.php
+	demon-protic3.php
+	demon-provincia.php
+	demon-provincia2.php
+	demon-provincia3.php
+	demon-region.php
+	demon-region2.php
+	demon-region3.php
+	demon-tipos.php
+	demon-tipos2.php
+	demon-tipos3.php
+	index.php
+	index2.php
+	index3.php
+	totem-alcance.php
+	totem-alcance2.php
+	totem-areas.php
+	totem-areas2.php
+	totem-blanco.php
+	totem-blanco2.php
+	totem-clas.php
+	totem-clas2.php
+	totem-dist.php
+	totem-dist2.php
+	totem-estatus.php
+	totem-estatus2.php
+	totem-inst.php
+	totem-inst2.php
+	totem-instipo.php
+	totem-instipo2.php
+	totem-protic.php
+	totem-protic2.php
+	totem-provincia.php
+	totem-provincia2.php
+	totem-region.php
+	totem-region2.php
+	totem-tipos.php
+	totem-tipos2.php
+	includes/
+		cabezote.php
+		footer.php
+		menues.php
+		mantenimientos.php
+css/
+	administrador.css
+	css.css
+	aplicacion.css
+	buscador.css
+	cajetin.css
+	catalogo.css
+	index.php
+	mapa.css
+	tablaresumen.css
+imagenes/
+	00.gif
+	altagracia_0.gif
+	altagracia_1.gif
+	altagracia_2.gif
+	altagracia_x.gif
+	azua_0.gif
+	azua_1.gif
+	azua_2.gif
+	azua_x.gif
+	back_roll.gif
+	bahoruco_0.gif
+	bahoruco_1.gif
+	bahoruco_2.gif
+	bahoruco_x.gif
+	BannerMapa.gif
+	barahona_0.gif
+	barahona_1.gif
+	barahona_2.gif
+	barahona_x.gif
+	cal.gif
+	completado.gif
+	dajabon_0.gif
+	dajabon_1.gif
+	dajabon_2.gif
+	dajabon_x.gif
+	distritonacional_0.gif
+	distritonacional_1.gif
+	distritonacional_2.gif
+	distritonacional_x.gif
+	duarte_0.gif
+	duarte_1.gif
+	duarte_2.gif
+	duarte_x.gif
+	eliaspina_0.gif
+	eliaspina_1.gif
+	eliaspina_2.gif
+	eliaspina_x.gif
+	elseybo_0.gif
+	elseybo_1.gif
+	elseybo_2.gif
+	elseybo_x.gif
+	espaillat_0.gif
+	espaillat_1.gif
+	espaillat_2.gif
+	espaillat_x.gif
+	hatomayor_0.gif
+	hatomayor_1.gif
+	hatomayor_2.gif
+	hatomayor_x.gif
+	independencia_0.gif
+	independencia_1.gif
+	independencia_2.gif
+	independencia_x.gif
+	index.php
+	laromana_0.gif
+	laromana_1.gif
+	laromana_2.gif
+	laromana_x.gif
+	lavega_0.gif
+	lavega_1.gif
+	lavega_2.gif
+	lavega_x.gif
+	mariatrinidadsanchez_0.gif
+	mariatrinidadsanchez_1.gif
+	mariatrinidadsanchez_2.gif
+	mariatrinidadsanchez_3.gif
+	monsnouel_0.gif
+	monsnouel_1.gif
+	monsnouel_2.gif
+	monsnouel_x.gif
+	montecristi_0.gif
+	montecristi_1.gif
+	montecristi_2.gif
+	montecristi_x.gif
+	monteplata_0.gif
+	monteplata_1.gif
+	monteplata_2.gif
+	monteplata_x.gif
+	next.gif
+	next_year.gif
+	pedernales_0.gif
+	pedernales_1.gif
+	pedernales_2.gif
+	pedernales_x.gif
+	peravia_0.gif
+	peravia_1.gif
+	peravia_2.gif
+	peravia_x.gif
+	pixel.gif
+	prev.gif
+	prev_year.gif
+	pt_1.gif
+	pt_2.gif
+	pt_3.gif
+	pt_4.gif
+	pt_5.gif
+	puertoplata_0.gif
+	puertoplata_1.gif
+	puertoplata_2.gif
+	puertoplata_x.gif
+	salcedo_0.gif
+	salcedo_1.gif
+	salcedo_2.gif
+	salcedo_x.gif
+	samana_0.gif
+	samana_1.gif
+	samana_2.gif
+	samana_x.gif
+	sanchezramirez_0.gif
+	sanchezramirez_1.gif
+	sanchezramirez_2.gif
+	sanchezramirez_x.gif
+	sancristobal_0.gif
+	sancristobal_1.gif
+	sancristobal_2.gif
+	sancristobal_x.gif
+	sanjoseocoa_0.gif
+	sanjoseocoa_1.gif
+	sanjoseocoa_2.gif
+	sanjoseocoa_x.gif
+	sanjuanmaguana_0.gif
+	sanjuanmaguana_1.gif
+	sanjuanmaguana_2.gif
+	sanjuanmaguana_x.gif
+	sanpedromacoris_0.gif
+	sanpedromacoris_1.gif
+	sanpedromacoris_2.gif
+	sanpedromacoris_x.gif
+	santiago_0.gif
+	santiago_1.gif
+	santiago_2.gif
+	santiago_x.gif
+	santiagorodriguez_0.gif
+	santiagorodriguez_1.gif
+	santiagorodriguez_2.gif
+	santiagorodriguez_x.gif
+	santodgo_0.gif
+	santodgo_1.gif
+	santodgo_2.gif
+	santodgo_x.gif
+	valverdemao_0.gif
+	valverdemao_1.gif
+	valverdemao_2.gif
+	valverdemao_x.gif
+includes/
+	buscador.php
+	cajetin.php
+	calculador.php
+	catalogo.php
+	index.php
+	mapa.php
+	tablaresumen.php
+js/
+	EULA_gen_validatorv2.txt
+	calendar.html
+	calendar1.js
+	calendar2.js
+	calendar3.js
+	gen_validatorv2.js
+	index.php
+	organizador.js
+	rollovers.js
+
+

@@ -1,0 +1,54 @@
+
+div.col1form-cat {
+	width:100%;
+	float:left;
+	margin:5px 0px 0px 0px;
+	
+}
+
+span.etiqueta-cat {
+	width:30%;
+	float:left;
+	margin:0px 0px 0px 0px;
+	color:#06931D;
+	text-align: right;
+	}
+
+span.colcampoformaob-cat {
+	width:50%;
+	float:left;
+	margin:5px 0px 5px 5px;
+    border: 2px solid #ff0d00;
+	background-color:#E4E4E4;
+	text-align: left;
+	}
+	
+span.colcampoforma-cat {
+	width:50%;
+	float:left;
+	margin:0px 0px 0px 5px;
+    border: 1px solid;
+	background-color:#E4E4E4;
+	text-align: left;
+	}
+	
+span.campoforma-cat {
+	border:1px solid #cccccc;
+	font-family:verdana, arial, sans-serif;
+	font-size:11px;
+	color:#000;
+	
+	}
+
+.botones-cat {
+	background-color: #06931D;
+	color:#ffffff;
+	font-size:10px;
+	border-bottom:1px solid #666666 ;
+	border-right:1px solid #666666 ;
+	border-top:1px solid #999 ;
+	border-left:1px solid #999 ;
+	margin:0px 3px 0px 3px;
+
+	}
+}

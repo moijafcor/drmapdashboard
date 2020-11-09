@@ -1,0 +1,64 @@
+#resumenproyectos-1 {
+	width:700px;
+	height:auto;
+	background-color:#fff;
+	border:1px solid #06931D;
+	position:absolute;
+	top:400px;
+	right:10px;
+	z-index:500;
+	
+	}
+	
+table.resumen {
+	width:98%;
+	height:100%;
+    border: 0px solid #fff;
+    border-collapse: collapse;
+	font-family:verdana, arial, sans-serif;
+    background-color: #e1f9d2;
+	text-aling:left:
+	color:#000000;
+	margin:5px 5px 5px 5px;
+}
+
+table.columnasiz {
+	width:200px;
+	margin:1px 0px 0px 0px;
+	color:#000;
+    border: 0px solid #fff;
+	background-color:#fff;
+	font-size:9px;
+	text-align: left;	
+}
+
+table.columnascen {
+	width:210px;
+	margin:1px 0px 0px 0px;
+	color:#000;
+    border: 0px solid #fff;
+	background-color:#fff;
+	font-size:9px;
+	text-align: left;	
+}
+
+table.columnasder {
+	width:220px;
+	margin:1px 0px 0px 0px;
+	color:#000;
+    border: 0px solid #fff;
+	background-color:#fff;
+	font-size:9px;
+	text-align: left;	
+}
+
+/* Zebras */	
+	
+tr.par {
+      background-color: #e1f9d2;
+    }
+    
+tr.impar   {
+      background-color: #c7f3a9;
+    
+	}

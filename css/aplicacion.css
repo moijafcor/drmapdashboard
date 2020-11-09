@@ -1,0 +1,62 @@
+body {
+	background-color: #F7F7F8;
+    background-image: url(../imagenes/BannerMapa.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+	background-attachment: fixed;
+}
+
+
+.wrapper {
+	margin:auto 0px;
+}
+
+#core {
+	width:100%;
+	margin:auto 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+}
+
+a:link {
+
+	color:#000000;
+	text-decoration:none;
+}
+
+a:visited {
+
+	color:#000000;
+	text-decoration:none;
+}
+
+a:active {
+
+	color:#000000;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#06931D;
+	text-decoration:underline overline;
+
+}
+
+/* Fichero para atrapar boyeristas */
+
+
+#boyeristas-666 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	text-align: center;
+	vertical-align: bottom;
+	margin-top: 400px;
+}
+
+div.footer {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+
+
+}

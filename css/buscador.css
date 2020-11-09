@@ -1,0 +1,32 @@
+#buscador-1 {
+	width:220px;
+	background-color:#fff;
+	border:1px solid #06931D;
+	position:absolute;
+	top:145px;
+	right:10px;
+	z-index:600;
+	padding-top:3px;
+	padding-bottom:3px;
+
+	}
+
+.boquita-1 {
+	border:1px solid #cccccc;
+	font-family:verdana, arial, sans-serif;
+	font-size:11px;
+	color:#730959;
+
+	}
+
+.boton-1 {
+	background-color: #06931D;
+	color:#ffffff;
+	font-size:10px;
+	border-bottom:1px solid #666666 ;
+	border-right:1px solid #666666 ;
+	border-top:1px solid #999 ;
+	border-left:1px solid #999 ;
+
+	}
+

@@ -1,0 +1,85 @@
+#cajetin-1 {
+	width:220px;
+	height:auto;
+	background-color:#fff;
+	border:1px solid #06931D;
+	position:absolute;
+	top:10px;
+	right:10px;
+	z-index:500;
+	
+	}
+	
+table.cajetin {
+	width:95%;
+	height:100%;
+    border: 0px solid #fff;
+    border-collapse: collapse;
+	font-family:verdana, arial, sans-serif;
+    background-color: #fff;
+	color:#000000;
+	margin:5px 5px 5px 5px;
+}
+	
+td.colorverde {
+	width:10px;
+	padding:3px 0px 0px 0px;
+    border: 0px solid #fff;
+	font-size:9px;
+	text-align: center;	
+	background-color:#06931D;
+	color:#06931D;
+	
+	}
+	
+td.colornaranja {
+	width:10px;
+	padding:3px 0px 0px 0px;
+    border: 0px solid #fff;
+	font-size:9px;
+	text-align: center;	
+	background-color:#FCBF05;
+	color:#FCBF05;
+	
+	}
+
+	
+td.colorturquesa {
+	width:10px;
+	padding:3px 0px 0px 0px;
+    border: 0px solid #fff;
+	font-size:9px;
+	text-align: center;	
+	background-color:#07FDA3;
+	color:#07FDA3;
+	
+	}
+
+td.bandera {
+	width:10px;
+	padding:3px 0px 0px 0px;
+	color:#000;
+    border: 0px solid #fff;
+	font-size:9px;
+	text-align: center;
+}
+
+td.descriptor {
+	width:210px;
+	padding:3px 0px 0px 10px;
+	color:#000;
+    border: 0px solid #fff;
+	font-size:9px;
+	text-align: left;	
+}
+
+/* Zebras */	
+	
+tr.uno {
+      background-color: #e1f9d2;
+    }
+    
+tr.dos   {
+      background-color: #c7f3a9;
+    
+	

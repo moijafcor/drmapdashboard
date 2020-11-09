@@ -1,0 +1,7 @@
+@import url('aplicacion.css');  /*genera estructura y look-&-feel general*/
+@import url('mapa.css');  /*da estructura al mapa*/
+@import url('cajetin.css');   /*da estructura y forma al cajetin del mapa*/
+@import url('tablaresumen.css');   /*da estructura y forma a la tabla de resumenes de proyectos por provincias*/
+@import url('buscador.css');   /*da estructura y forma al buscador*/
+@import url('administrador.css');   /*da estructura y forma a los formularios de administracion*/
+@import url('catalogo.css');   /*da estructura y forma a las interfaces del 'index2.php' e 'index3.php'*/

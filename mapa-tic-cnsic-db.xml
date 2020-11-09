@@ -1,0 +1,1007 @@
+<?xml version="1.0" standalone="yes" ?>
+<DBMODEL Version="4.0">
+<SETTINGS>
+<GLOBALSETTINGS ModelName="mapa-tic-cnsic-db" IDModel="0" IDVersion="0" VersionStr="1.0.0.0" Comments="" UseVersionHistroy="1" AutoIncVersion="1" DatabaseType="MySQL" ZoomFac="78.00" XPos="1354" YPos="586" DefaultDataType="5" DefaultTablePrefix="0" DefSaveDBConn="" DefSyncDBConn="cnsic_joomla_desarrollo" DefQueryDBConn="" Printer="" HPageCount="4.0" PageAspectRatio="1.440892512336408" PageOrientation="1" PageFormat="A4 (210x297 mm, 8.26x11.7 inches)" SelectedPages="" UsePositionGrid="1" PositionGridX="20" PositionGridY="20" TableNameInRefs="1" DefaultTableType="0" ActivateRefDefForNewRelations="1" FKPrefix="" FKPostfix="" CreateFKRefDefIndex="1" DBQuoteCharacter="`" CreateSQLforLinkedObjects="0" DefModelFont="Tahoma" CanvasWidth="4096" CanvasHeight="2842" />
+<DATATYPEGROUPS>
+<DATATYPEGROUP Name="Numeric Types" Icon="1" />
+<DATATYPEGROUP Name="Date and Time Types" Icon="2" />
+<DATATYPEGROUP Name="String Types" Icon="3" />
+<DATATYPEGROUP Name="Blob and Text Types" Icon="4" />
+<DATATYPEGROUP Name="User defined Types" Icon="5" />
+<DATATYPEGROUP Name="Geographic Types" Icon="6" />
+</DATATYPEGROUPS>
+<DATATYPES>
+<DATATYPE ID="1" IDGroup="0" TypeName="TINYINT" Description="A very small integer. The signed range is -128 to 127. The unsigned range is 0 to 255." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="1" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="2" IDGroup="0" TypeName="SMALLINT" Description="A small integer. The signed range is -32768 to 32767. The unsigned range is 0 to 65535." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="1" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="3" IDGroup="0" TypeName="MEDIUMINT" Description="A medium-size integer. The signed range is -8388608 to 8388607. The unsigned range is 0 to 16777215." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="1" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="4" IDGroup="0" TypeName="INT" Description="A normal-size integer. The signed range is -2147483648 to 2147483647. The unsigned range is 0 to 4294967295." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="1" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="0" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="5" IDGroup="0" TypeName="INTEGER" Description="A normal-size integer. The signed range is -2147483648 to 2147483647. The unsigned range is 0 to 4294967295." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="1" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="1" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="6" IDGroup="0" TypeName="BIGINT" Description="A large integer. The signed range is -9223372036854775808 to 9223372036854775807. The unsigned range is 0 to 18446744073709551615." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="0" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="7" IDGroup="0" TypeName="FLOAT" Description="A small (single-precision) floating-point number. Cannot be unsigned. Allowable values are -3.402823466E+38 to -1.175494351E-38, 0, and 1.175494351E-38 to 3.402823466E+38." ParamCount="1" OptionCount="1" ParamRequired="1" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="precision" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="8" IDGroup="0" TypeName="FLOAT" Description="A small (single-precision) floating-point number. Cannot be unsigned. Allowable values are -3.402823466E+38 to -1.175494351E-38, 0, and 1.175494351E-38 to 3.402823466E+38." ParamCount="2" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="9" IDGroup="0" TypeName="DOUBLE" Description="A normal-size (double-precision) floating-point number. Cannot be unsigned. Allowable values are -1.7976931348623157E+308 to -2.2250738585072014E-308, 0, and 2.2250738585072014E-308 to 1.7976931348623157E+308." ParamCount="2" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="2" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="10" IDGroup="0" TypeName="DOUBLE PRECISION" Description="This is a synonym for DOUBLE." ParamCount="2" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="2" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="11" IDGroup="0" TypeName="REAL" Description="This is a synonym for DOUBLE." ParamCount="2" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="2" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="12" IDGroup="0" TypeName="DECIMAL" Description="An unpacked floating-point number. Cannot be unsigned. Behaves like a CHAR column." ParamCount="2" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="3" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="13" IDGroup="0" TypeName="NUMERIC" Description="This is a synonym for DECIMAL." ParamCount="2" OptionCount="1" ParamRequired="1" EditParamsAsString="0" SynonymGroup="3" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="14" IDGroup="1" TypeName="DATE" Description="A date. The supported range is \a1000-01-01\a to \a9999-12-31\a." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="15" IDGroup="1" TypeName="DATETIME" Description="A date and time combination. The supported range is \a1000-01-01 00:00:00\a to \a9999-12-31 23:59:59\a." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="16" IDGroup="1" TypeName="TIMESTAMP" Description="A timestamp. The range is \a1970-01-01 00:00:00\a to sometime in the year 2037. The length can be 14 (or missing), 12, 10, 8, 6, 4, or 2 representing YYYYMMDDHHMMSS, ... , YYYYMMDD, ... , YY formats." ParamCount="1" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+</DATATYPE>
+<DATATYPE ID="17" IDGroup="1" TypeName="TIME" Description="A time. The range is \a-838:59:59\a to \a838:59:59\a." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="18" IDGroup="1" TypeName="YEAR" Description="A year in 2- or 4-digit format (default is 4-digit)." ParamCount="1" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+</DATATYPE>
+<DATATYPE ID="19" IDGroup="2" TypeName="CHAR" Description="A fixed-length string (1 to 255 characters) that is always right-padded with spaces to the specified length when stored. values are sorted and compared in case-insensitive fashion according to the default character set unless the BINARY keyword is given." ParamCount="1" OptionCount="1" ParamRequired="1" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="BINARY" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="20" IDGroup="2" TypeName="VARCHAR" Description="A variable-length string (1 to 255 characters). Values are sorted and compared in case-sensitive fashion unless the BINARY keyword is given." ParamCount="1" OptionCount="1" ParamRequired="1" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="BINARY" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="21" IDGroup="2" TypeName="BIT" Description="This is a synonym for CHAR(1)." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="22" IDGroup="2" TypeName="BOOL" Description="This is a synonym for CHAR(1)." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="23" IDGroup="3" TypeName="TINYBLOB" Description="A column maximum length of 255 (2^8 - 1) characters. Values are sorted and compared in case-sensitive fashion." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="24" IDGroup="3" TypeName="BLOB" Description="A column maximum length of 65535 (2^16 - 1) characters. Values are sorted and compared in case-sensitive fashion." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="25" IDGroup="3" TypeName="MEDIUMBLOB" Description="A column maximum length of 16777215 (2^24 - 1) characters. Values are sorted and compared in case-sensitive fashion." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="26" IDGroup="3" TypeName="LONGBLOB" Description="A column maximum length of 4294967295 (2^32 - 1) characters. Values are sorted and compared in case-sensitive fashion." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="27" IDGroup="3" TypeName="TINYTEXT" Description="A column maximum length of 255 (2^8 - 1) characters." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="28" IDGroup="3" TypeName="TEXT" Description="A column maximum length of 65535 (2^16 - 1) characters." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="29" IDGroup="3" TypeName="MEDIUMTEXT" Description="A column maximum length of 16777215 (2^24 - 1) characters." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="30" IDGroup="3" TypeName="LONGTEXT" Description="A column maximum length of 4294967295 (2^32 - 1) characters." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="31" IDGroup="3" TypeName="ENUM" Description="An enumeration. A string object that can have only one value, chosen from the list of values." ParamCount="1" OptionCount="0" ParamRequired="1" EditParamsAsString="1" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="values" />
+</PARAMS>
+</DATATYPE>
+<DATATYPE ID="32" IDGroup="3" TypeName="SET" Description="A set. A string object that can have zero or more values, each of which must be chosen from the list of values." ParamCount="1" OptionCount="0" ParamRequired="1" EditParamsAsString="1" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="values" />
+</PARAMS>
+</DATATYPE>
+<DATATYPE ID="33" IDGroup="4" TypeName="Varchar(20)" Description="" ParamCount="0" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<OPTIONS>
+<OPTION Name="BINARY" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="34" IDGroup="4" TypeName="Varchar(45)" Description="" ParamCount="0" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<OPTIONS>
+<OPTION Name="BINARY" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="35" IDGroup="4" TypeName="Varchar(255)" Description="" ParamCount="0" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<OPTIONS>
+<OPTION Name="BINARY" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="36" IDGroup="5" TypeName="GEOMETRY" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="38" IDGroup="5" TypeName="LINESTRING" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="39" IDGroup="5" TypeName="POLYGON" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="40" IDGroup="5" TypeName="MULTIPOINT" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="41" IDGroup="5" TypeName="MULTILINESTRING" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="42" IDGroup="5" TypeName="MULTIPOLYGON" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="43" IDGroup="5" TypeName="GEOMETRYCOLLECTION" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+</DATATYPES>
+<COMMON_DATATYPES>
+<COMMON_DATATYPE ID="5" />
+<COMMON_DATATYPE ID="8" />
+<COMMON_DATATYPE ID="20" />
+<COMMON_DATATYPE ID="15" />
+<COMMON_DATATYPE ID="22" />
+<COMMON_DATATYPE ID="26" />
+<COMMON_DATATYPE ID="28" />
+<COMMON_DATATYPE ID="33" />
+<COMMON_DATATYPE ID="34" />
+<COMMON_DATATYPE ID="35" />
+</COMMON_DATATYPES>
+<TABLEPREFIXES>
+<TABLEPREFIX Name="Default (no prefix)" />
+</TABLEPREFIXES>
+<REGIONCOLORS>
+<REGIONCOLOR Color="Red=#FFEEEC" />
+<REGIONCOLOR Color="Yellow=#FEFDED" />
+<REGIONCOLOR Color="Green=#EAFFE5" />
+<REGIONCOLOR Color="Cyan=#ECFDFF" />
+<REGIONCOLOR Color="Blue=#F0F1FE" />
+<REGIONCOLOR Color="Magenta=#FFEBFA" />
+</REGIONCOLORS>
+<POSITIONMARKERS>
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+</POSITIONMARKERS>
+</SETTINGS>
+<METADATA>
+<REGIONS>
+<REGION ID="1106" RegionName="Institucion" XPos="1060" YPos="1000" Width="540" Height="620" RegionColor="2" TablePrefix="1" TableType="0" OverwriteTablePrefix="0" OverwriteTableType="0" Comments="" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="16" />
+<REGION ID="1105" RegionName="Provincias" XPos="1500" YPos="1920" Width="700" Height="460" RegionColor="1" TablePrefix="0" TableType="0" OverwriteTablePrefix="0" OverwriteTableType="0" Comments="" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="15" />
+<REGION ID="1104" RegionName="Proyectos" XPos="2340" YPos="580" Width="1010" Height="1200" RegionColor="0" TablePrefix="0" TableType="0" OverwriteTablePrefix="0" OverwriteTableType="0" Comments="" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="14" />
+<REGION ID="1347" RegionName="Control de Acceso" XPos="2300" YPos="1900" Width="400" Height="280" RegionColor="3" TablePrefix="0" TableType="0" OverwriteTablePrefix="0" OverwriteTableType="0" Comments="" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="37" />
+</REGIONS>
+<TABLES>
+<TABLE ID="1000" Tablename="catics_proyectos-tic_rd" PrevTableName="Table_01" XPos="1780" YPos="840" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="2" >
+<COLUMNS>
+<COLUMN ID="1002" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1252" ColName="catics_alcance_tipo_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1260" ColName="catics_areas_desarrollo_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1267" ColName="catics_estatus_implementacion_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1270" ColName="catics_publico_blanco_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1313" ColName="catics_institu_patrocinadora_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1315" ColName="catics_institu_patrocinadora_catics_institu_tipo_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1317" ColName="catics_provincia_intervenida_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1319" ColName="catics_provincia_intervenida_catics_region_geografica_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1326" ColName="catics_clasificacion_tipos_edom_catics_tipos_distribucion_areas_edom_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1325" ColName="catics_clasificacion_tipos_edom_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1388" ColName="catics__clasificacion_edom_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1008" ColName="Proyecto" PrevColName="Nombre" Pos="1" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1009" ColName="Descripcion" PrevColName="" Pos="2" idDatatype="28" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1025" ColName="ObjetivosProyecto" PrevColName="" Pos="17" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1010" ColName="FechaInicio" PrevColName="" Pos="3" idDatatype="14" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1011" ColName="FechaFin" PrevColName="" Pos="4" idDatatype="14" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1012" ColName="Website" PrevColName="" Pos="5" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1331" ColName="eMail" PrevColName="" Pos="28" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1013" ColName="DireccionPostal" PrevColName="" Pos="6" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1014" ColName="Ciudad" PrevColName="" Pos="7" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1335" ColName="telefonoprotic" PrevColName="" Pos="29" idDatatype="20" DatatypeParams="(20)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1015" ColName="id_ProvinciaIntervenida" PrevColName="" Pos="8" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1016" ColName="id_InstitucionPatrocina" PrevColName="" Pos="9" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1017" ColName="id_EstatusImplementacion" PrevColName="" Pos="10" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1018" ColName="id_AreaDesarrollo" PrevColName="" Pos="11" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1019" ColName="id_Clasificacion_Tipos_EDom" PrevColName="" Pos="12" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1020" ColName="id_AlcanceSectorial" PrevColName="" Pos="13" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1021" ColName="id_AlcanceTipo" PrevColName="" Pos="14" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1023" ColName="id_PublicoBlanco" PrevColName="" Pos="16" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1385" ColName="id_ClasificacionEDom" PrevColName="" Pos="29" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_END>
+<RELATION_END ID="1251" />
+<RELATION_END ID="1254" />
+<RELATION_END ID="1259" />
+<RELATION_END ID="1266" />
+<RELATION_END ID="1269" />
+<RELATION_END ID="1272" />
+<RELATION_END ID="1276" />
+<RELATION_END ID="1387" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="1003" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1002" LengthParam="0" />
+<INDEXCOLUMN idColumn="1252" LengthParam="0" />
+<INDEXCOLUMN idColumn="1260" LengthParam="0" />
+<INDEXCOLUMN idColumn="1267" LengthParam="0" />
+<INDEXCOLUMN idColumn="1270" LengthParam="0" />
+<INDEXCOLUMN idColumn="1313" LengthParam="0" />
+<INDEXCOLUMN idColumn="1315" LengthParam="0" />
+<INDEXCOLUMN idColumn="1317" LengthParam="0" />
+<INDEXCOLUMN idColumn="1319" LengthParam="0" />
+<INDEXCOLUMN idColumn="1326" LengthParam="0" />
+<INDEXCOLUMN idColumn="1325" LengthParam="0" />
+<INDEXCOLUMN idColumn="1388" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1165" IndexName="ProyectosTicRD_nombrePro" IndexKind="1" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1008" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1253" IndexName="ProyectosTicRD_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1251">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1252" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1258" IndexName="ProyectosTicRD_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1254">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1325" LengthParam="0" />
+<INDEXCOLUMN idColumn="1326" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1261" IndexName="ProyectosTicRD_FKIndex3" IndexKind="1" FKRefDef_Obj_id="1259">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1260" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1268" IndexName="ProyectosTicRD_FKIndex4" IndexKind="1" FKRefDef_Obj_id="1266">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1267" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1271" IndexName="ProyectosTicRD_FKIndex5" IndexKind="1" FKRefDef_Obj_id="1269">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1270" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1275" IndexName="ProyectosTicRD_FKIndex6" IndexKind="1" FKRefDef_Obj_id="1272">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1317" LengthParam="0" />
+<INDEXCOLUMN idColumn="1319" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1279" IndexName="ProyectosTicRD_FKIndex7" IndexKind="1" FKRefDef_Obj_id="1276">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1313" LengthParam="0" />
+<INDEXCOLUMN idColumn="1315" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1389" IndexName="catics_proyectos-tic_rd_FKIndex8" IndexKind="1" FKRefDef_Obj_id="1387">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1388" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1026" Tablename="catics_provincia_intervenida" PrevTableName="Table_02" XPos="1620" YPos="1960" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="3" >
+<COLUMNS>
+<COLUMN ID="1028" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1249" ColName="catics_region_geografica_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1031" ColName="Provincia" PrevColName="nombre" Pos="2" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1033" ColName="Descripcion" PrevColName="descripcion" Pos="4" idDatatype="28" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1032" ColName="TotalPoblacion" PrevColName="totalPoblacion" Pos="3" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1246" ColName="id_RegionGeografica" PrevColName="" Pos="4" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1272" />
+</RELATIONS_START>
+<RELATIONS_END>
+<RELATION_END ID="1248" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="1029" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1028" LengthParam="0" />
+<INDEXCOLUMN idColumn="1249" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1250" IndexName="ProvinciaIntervenida_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1248">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1249" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1041" Tablename="catics_areas_desarrollo" PrevTableName="Table_04" XPos="2680" YPos="940" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="5" >
+<COLUMNS>
+<COLUMN ID="1043" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1045" ColName="nombre" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1046" ColName="descripcion" PrevColName="" Pos="2" idDatatype="28" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1259" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1044" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1043" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1047" Tablename="catics__clasificacion_edom" PrevTableName="Table_05" XPos="2480" YPos="1220" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="6" >
+<COLUMNS>
+<COLUMN ID="1049" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1051" ColName="clasificacion" PrevColName="nombre" Pos="1" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1052" ColName="descripcion" PrevColName="" Pos="2" idDatatype="28" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1387" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1050" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1049" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1065" Tablename="catics_region_geografica" PrevTableName="Table_08" XPos="1940" YPos="2200" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="9" >
+<COLUMNS>
+<COLUMN ID="1067" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1069" ColName="region" PrevColName="nombre" Pos="1" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1070" ColName="descripcion" PrevColName="" Pos="2" idDatatype="28" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1248" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1068" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1067" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1071" Tablename="catics_publico_blanco" PrevTableName="Table_09" XPos="2540" YPos="800" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="10" >
+<COLUMNS>
+<COLUMN ID="1073" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1075" ColName="nombre" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1076" ColName="descripcion" PrevColName="" Pos="2" idDatatype="28" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1269" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1074" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1073" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1077" Tablename="catics_estatus_implementacion" PrevTableName="Table_10" XPos="2400" YPos="640" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="11" >
+<COLUMNS>
+<COLUMN ID="1079" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1081" ColName="nombre" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1082" ColName="descripcion" PrevColName="" Pos="2" idDatatype="28" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1266" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1080" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1079" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1083" Tablename="catics_institu_patrocinadora" PrevTableName="Table_11" XPos="1200" YPos="1100" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="12" >
+<COLUMNS>
+<COLUMN ID="1085" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1234" ColName="catics_institu_tipo_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1087" ColName="institucion" PrevColName="nombre" Pos="1" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1088" ColName="direccion" PrevColName="" Pos="2" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1089" ColName="ciudad" PrevColName="" Pos="3" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1090" ColName="id_provincia" PrevColName="" Pos="4" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1091" ColName="website" PrevColName="" Pos="5" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1092" ColName="email" PrevColName="" Pos="6" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1093" ColName="telefono" PrevColName="" Pos="7" idDatatype="19" DatatypeParams="()" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1094" ColName="id_InstituTipo" PrevColName="" Pos="8" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1276" />
+</RELATIONS_START>
+<RELATIONS_END>
+<RELATION_END ID="1233" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="1086" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1085" LengthParam="0" />
+<INDEXCOLUMN idColumn="1234" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1235" IndexName="InstituPatrocinadora_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1233">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1234" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1095" Tablename="catics_institu_tipo" PrevTableName="Table_12" XPos="1260" YPos="1420" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="13" >
+<COLUMNS>
+<COLUMN ID="1097" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1099" ColName="instipo" PrevColName="nombre" Pos="1" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1100" ColName="descripcion" PrevColName="" Pos="2" idDatatype="28" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1233" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1098" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1097" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1200" Tablename="catics_tipos_distribucion_areas_edom" PrevTableName="Table_25" XPos="2620" YPos="1520" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="19" >
+<COLUMNS>
+<COLUMN ID="1202" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1204" ColName="nombre" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1205" ColName="descripcion" PrevColName="" Pos="2" idDatatype="28" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1236" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1203" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1202" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1059" Tablename="catics_alcance_tipo" PrevTableName="Table_07" XPos="2380" YPos="1640" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="8" >
+<COLUMNS>
+<COLUMN ID="1061" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1063" ColName="nombre" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(255)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1064" ColName="descripcion" PrevColName="" Pos="2" idDatatype="28" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1251" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1062" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1061" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1211" Tablename="catics_clasificacion_tipos_edom" PrevTableName="Table_27" XPos="2400" YPos="1340" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="22" >
+<COLUMNS>
+<COLUMN ID="1213" ColName="id" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1237" ColName="catics_tipos_distribucion_areas_edom_id" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1215" ColName="id_ClasificacionEDom" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1216" ColName="id_TiposDistribucionAreasEDom" PrevColName="" Pos="2" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1254" />
+</RELATIONS_START>
+<RELATIONS_END>
+<RELATION_END ID="1236" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="1214" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1213" LengthParam="0" />
+<INDEXCOLUMN idColumn="1237" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1238" IndexName="Clasificacion_Tipos_EDom_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1236">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1237" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1336" Tablename="catics_usuarios" PrevTableName="Table_13" XPos="2420" YPos="2000" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="36" >
+<COLUMNS>
+<COLUMN ID="1338" ColName="id" PrevColName="" Pos="0" idDatatype="4" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1341" ColName="password_2" PrevColName="" Pos="2" idDatatype="20" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1340" ColName="usuario" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1342" ColName="nivelacceso" PrevColName="" Pos="3" idDatatype="20" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<INDICES>
+<INDEX ID="1339" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1338" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+</TABLES>
+<RELATIONS>
+<RELATION ID="1233" RelationName="Rel_23" Kind="0" SrcTable="1095" DestTable="1083" FKFields="id=catics_institu_tipo_id\n" FKFieldsComments="\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1235" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="25" />
+<RELATION ID="1236" RelationName="Rel_24" Kind="0" SrcTable="1200" DestTable="1211" FKFields="id=catics_tipos_distribucion_areas_edom_id\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1238" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="26" />
+<RELATION ID="1248" RelationName="Rel_27" Kind="0" SrcTable="1065" DestTable="1026" FKFields="id=catics_region_geografica_id\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1250" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="28" />
+<RELATION ID="1251" RelationName="Rel_28" Kind="0" SrcTable="1059" DestTable="1000" FKFields="id=catics_alcance_tipo_id\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1253" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="29" />
+<RELATION ID="1254" RelationName="Rel_29" Kind="0" SrcTable="1211" DestTable="1000" FKFields="id=catics_clasificacion_tipos_edom_id\ncatics_tipos_distribucion_areas_edom_id=catics_clasificacion_tipos_edom_catics_tipos_distribucion_areas_edom_id\n" FKFieldsComments="\n\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1258" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="30" />
+<RELATION ID="1259" RelationName="Rel_30" Kind="0" SrcTable="1041" DestTable="1000" FKFields="id=catics_areas_desarrollo_id\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1261" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="31" />
+<RELATION ID="1266" RelationName="Rel_32" Kind="0" SrcTable="1077" DestTable="1000" FKFields="id=catics_estatus_implementacion_id\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1268" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="32" />
+<RELATION ID="1269" RelationName="Rel_33" Kind="0" SrcTable="1071" DestTable="1000" FKFields="id=catics_publico_blanco_id\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1271" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="33" />
+<RELATION ID="1272" RelationName="Rel_34" Kind="0" SrcTable="1026" DestTable="1000" FKFields="id=catics_provincia_intervenida_id\ncatics_region_geografica_id=catics_provincia_intervenida_catics_region_geografica_id\n" FKFieldsComments="\n\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1275" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="34" />
+<RELATION ID="1276" RelationName="Rel_35" Kind="0" SrcTable="1083" DestTable="1000" FKFields="id=catics_institu_patrocinadora_id\ncatics_institu_tipo_id=catics_institu_patrocinadora_catics_institu_tipo_id\n" FKFieldsComments="\n\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1279" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="35" />
+<RELATION ID="1387" RelationName="Rel_12" Kind="0" SrcTable="1047" DestTable="1000" FKFields="id=catics__clasificacion_edom_id\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1389" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="37" />
+</RELATIONS>
+<NOTES>
+<NOTE ID="1197" NoteName="Note_01" XPos="2760" YPos="1160" NoteText="Distribuci\243n por \225reas de desarrollo \n(clasificaci\243n de la E-DOMINICANA)\n\n- Infraestructura (Acceso y Conectividad)\n-- Dirigidos a la ciudadan\237a\n-- Dirigidos al gobierno\n-- Dirigidos a la empresa\n- Educaci\243n y alfabetizaci\243n Digital\n-- Dirigidos a la ciudadan\237a\n-- Dirigidos al gobierno\n-- Dirigidos a la empresa\n- Desarrollo de contenidos\n-- Dirigidos a la ciudadan\237a\n-- Dirigidos al gobierno\n-- Dirigidos a la empresa\n\n" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="17" />
+<NOTE ID="1199" NoteName="Note_02" XPos="2860" YPos="940" NoteText="Distribuci\243n por \225reas de desarrollo \n(clasificaci\243n del INDOTEL)\n\n- De acceso a las TIC (Acceso y Conectividad)\n- De apoyo a la salud\n- De apoyo a la educaci\243n basica\n- De apoyo a la educacion media\n- De apoyo a la educacion superior\n- De apoyo a la educacion tecnica\n- De apoyo al gobierno electr\243nico.\n- De apoyo a la competitividad.\n" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="18" />
+<NOTE ID="1208" NoteName="Note_03" XPos="2560" YPos="1640" NoteText="- Nacional\n- Regional\n- Provincial\n- Local\n\n" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="19" />
+<NOTE ID="1209" NoteName="Note_04" XPos="2720" YPos="800" NoteText="- J\243venes\n- Mujeres \n- Ni\241os/ni\241as\n- Personas con discapacidades\n- Otros\n" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" />
+<NOTE ID="1210" NoteName="Note_05" XPos="2620" YPos="640" NoteText="- Iniciado (Menos del 10%)\n- A medio termino (avanzado hasta un 50%)\n- Finalizado\n" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="21" />
+<NOTE ID="1218" NoteName="Note_06" XPos="1440" YPos="1420" NoteText="- Gubernamental\n- ONG\n- Acad\233mica\n- Empresarial\n- Otra\n.\n" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="23" />
+<NOTE ID="1228" NoteName="Note_07" XPos="920" YPos="500" NoteText="/**\n* @version      $Id: \amapa-tic-cnsic-db.xml\a 22-07-2007 17:15:00 Moises Jafet$\n* @package    \ACatalogo de los Proyectos TIC en la Republica Dominicana. [C.P.TIC-RD]\A\n* @copyright   Copyright (C) 2007 Mois\233s Jafet Cornelio-Vargas. All rights reserved.\n* @license        GNU/GPL, see LICENSE.TXT\n* \n* [C.P.TIC-RD] is free software; you can redistribute it and/or modify it under the \n* terms of the GNU General Public License as published by the Free Software Foundation; \n* either version 3 of the License, or any later version. As distributed it includes or\n* is derivative of works licensed under the GNU General Public License or other free \n* or open source software licenses.\n*\n* [C.P.TIC-RD] is distributed in the hope that it will be useful, but WITHOUT ANY \n* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A \n* PARTICULAR PURPOSE.  See the GNU General Public License for more details and \n* COPYRIGHT.TXT for copyright notices and details.\n*/\n" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="23" />
+</NOTES>
+<IMAGES>
+<IMAGE ID="1230" ImageName="Image_02" XPos="360" YPos="1700" Width="8" Height="8" StrechImg="1" ImgWidth="140" ImgHeight="180" ImgFormat="PNG" ImgData="89504E470D0A1A0A0000000D494844520000008C000000B40803000000713734CC00000300504C54459A9696016D895894A38A858500ABD501C4F4FEFEFEA7D7EC0382CC8ECEECEA747501B5E2E89997AECBD756AAD87E787878C6E687C22D00A5CE015F773A9ED400BCEB837E7E36A8DD00B2DECDE5EC98BACCEA4A4E0F87CDF4F4F5686565EC2B3148A4D692C5D90085A666B3D9ED0D142B97D24E95CA037CCAE0E9EA0195BAC2D3D96BBBE64BAFE2928E8E3194AC658C26EAF6F6009CC4E9C1C0C0DBE55EAED9AEACAFB8E2F789AFB92270842FB7DECF7170C9888801C6F8046DBE5E7E8DEFE7CF5B58586F6C6C1E92D15DB2DC02C9FA77B8C6EDFEFE0499D8615D5D72B7DBCAD3B11F8CCED64B5019B2DA408394BA7878008ACE1194D1008EB1EA3A3E2973B82593D1017999639AC700B8E63CC7E949C0DF78A7C3FCF6EE67B5C7EC1C233197D15AB6CC1399BBBA494CE4EFF21B859FD8775168A6BBAABD88D431353E86C056A5BA1EACD2309FBC1CA2C543A2B9198DCF1CB8DFEA595CEDEAE9F8F5F6AA606684AED075A2AEA77B83D15F605A7381F7F7F701C1F20AB3DD21A1DBECEFECC0BDBFAC9F9F746263ACC99848B2CC666A729F8A8823C4EC13C6F371848F1990AE177FC4D7E0E2258FCE00C0F0F9F9F93836360FB6E1B75C36FAFBFB7794A584A254EA66680056AD737070856A6C08C1EFE6DFDEEFF0F19EE3320000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002E1A92B9000000097048597300000B1300000B1301009A9C1800001DEF49444154789CED5B8B5F1A49B6063536A8ADBD82282D288D0F10D488AD08E398F5B12632244451D168148DAC376AC468824988AFB96E664621DE5C332C19B97FEC3D55D50DCD1B33939DFBBBBF3DD554DAEEEAAA8FF39D73EA543591D5818CA26AEACF3F93FDE9082467B23ACD549D465337051FE9197C34A319D76E7F069FACB30263C8C433A8FFF4331900823FFF6F54B2224D3E7FD64CF59CF5C0D98737E5DF1A90AC4893C3E83D8DE6EC6C4CA3F930FCBAFC1B2B4756A4494FA7FA33D4A73D1A4D7C78F8CDB7254A56ACC96743EDE729CDE02918D787C1E1671F6E39C6ADA8954D956BCA35B86A814F79EACF294C4ADDE7A8C954560E6806EBEA341F9A9F3FCED738EB5AAE26852B5939C814AE34C933B1C2A16021EA570F695ACE2283C88A63CF1F93BB9A64253ED192D101FCA911AE41DD528EA1658C91D6C11402D3529EA742B1297E6FA16D6000EC66F06610A0F50C57BD7D93FF89DF57C90ADED540A4FE45A7D39974879A3A59C202B1A9E7F1EAEAEB0FDF040B8029D844331AAFDBDA1B9FDFEB189AAA3B7B158983E13C6E6DFDEEC337518EAC7093A9BAF8D8E7DAB6B6B6DA81C3BAF8D9811926D6A9B3E158D5976FA11C594F794F4F0B7C7A5AF059AA820F340130EFF61484A9BAD1337DE20CA6D9B3E6F6D5B71FA48FE1B35495F75AAED1C426E563327C032E92C12580F0B5724D7CF4DDE5DEF8DEB8DBEDFF0CBAD1EBC18CEBBE3C5C6D8D7DE9493D81CF4855DE937D4D6C579E1C2D632052C9C863F92A309AB1967B06571B62AA4D5617979D244ECB47EB3ED4C462558F65059FBD7D25F437967E23F927048F784B996E0F1753F4F368FC2C5169298FC77B1EB602555F0A769FAFD3BC67B2B1E4B59C1578F718F0343F3E3E3E1FBDEC04DD0C86AF6E7AE2A35FDEAEB6B6EE9F157AF6D695AC4893F2F2BAD17F7806304F6D6D03A19EF8D469421FE989C735C355B1AAE1E1F81F87654C2643CAC95B015153F17F6CEDB9B144F74C0BFF886B4E2BAF138363F11F875B5B57C1AB643D053AB85D055DC149FEAA056684B24BB7287B439AB826727D7D3208E1F0593B50F5F6AC7007B7AC6485AA1E0835EF3A27DA067069330C0CC64765377AFDC1E0D8D897C755314455F15E4AAB6484A8FC15F2EE7BEE3D0835F81837457F89C76589EB6BFD60CB681D30D5BADAFAB8682FA555320150EE2A0E4D7AA6EADE6DE9F644719B3A6563F1B3CA6B64372DF1EFDA5757119A42BDFC81159A12CA0C224D501958CD689D450F4C9D8EB58CC23C05329C42FFFB468B17ACC06834718F3B9A94F93DDDE7B19672CBD5F575F874B4250E93F86CEBEAFE97E25DFD1115184D992E4DDC432D63F19BCACAEB3062EA593BA2AAF9EC5F810519CD2F0B036D12A90DC9465B0681287DE2746CF4C7C788A858CDD9EF1E4D56BC0918CD2FFEA85F2AEE85BA96BAD3ABABEBABABC19696F8F02C486BEBF0BF80288834F7DC2693422ABAC3784B0B1005549D8E4D8D3E6C470268FE2546E331B8A43CB50DB80681A80462EAE47474EAC7EF3053C8A97EDF687545AB9EA9B8279D26BF3FBA0D93D629781408E8A6EEBBD6D966A0EABB33DCE9597ACF923FF30D499AA0CD1A8D5869EAB2CFEAE2A32D2D652645BA43015153A384A8CACAC1A9FFFAF139722998377F443B31A3751A69A7F8CF51DC29DEA711EEE231840ADDD5C8FE5A5C7EF86170C860A8CD2803A7B2F2D344184B44567E56B51F03D9AF29A1C37C22FB9FE2F297BFFCE5D75EB5DAA04E0A3AF5AFFD7AF7EE0F18CBABA73FDCBDFBEBDF9B91CCFEBD841EF3482960004D99CE7469325D2A4831994C3AF80CFD7AF7D7BF12A22A119A7622B16F0DE6D7CDDA0189B4A1CAB0F29F77EFFE07F628BD3E8CD054A1792A16ABF99660104DC1A0214BFC9B88283D319B2B40F378BF797F7FFFEB992A55331726DDA50E93A44B7E4C9793A08E13C2D3F5D3FFB87BF7BF81A5D5AF67AA5430C1606DB610A2F4FA578827FD0DE8E9EF0FB14BED7F1D5328F12C567012419C295911D7EA5886459E45E0291C191B6D199E6D06AE9A67AB3E94D0715659AC2E56AA9B2A6CEBD319931399A14C970301F96158F0A86BDAA7F23C177CEAB5B3BA68CF9945565D5C9AEA6DEB41750E9A6A6BD5AE4DB983161C4A9F9894ABDE3D24C1AF79D05942D7E9521218D08CDF6F30A8B30FB5DF15909799C3826C6CCB55BF609702A77AF3E81B81F14E679384C464726FCBE5ECB5405465A457EEF82210D5FEE6E5B701D365F423EFC97118B8A03C1011824D584F07548ED7CDFB3128FBFBECA76F060607BAAC5A6D98F4A9364530577DAC4FE5784C88DA6F3E3C2AD871E6DDD2C0D477ED9914301FE972D4238620D8B0C85365DF0A18B1E852AB9F73A2C907B154030EFAB3A703226A030736BC21DAF0AB4850AE8A3F148C38E66ACAD9E591E4B83D18BF7F20A76F63F746369C08EB7109EBF980DCD183FD1BE4ED4A6E3419C804304DD5450BA20905BD3CC5646A0BC83D91245110FBE48E67A24B3D3F6FCA05275D35044E5369606CEB7BEAFCE277ADF8E4CB301F101BBE42B1EFDEF3D96622C34B457493624AD654820098178681BC02EEDD8BDC3B296614FB6231B45EA88AED0F3BA10BE18B1D49BF6316A252C180DF28748A3C87C9BFED930F5DA788D242EC7B4DD20938DE48D0484B3A4B47A583F177001DF98ADF8F5573959404C43ECF3381A8D9D9C197A9BE8E52A7D54D020AF8179792C0D4DB80A5B602521B9A04D524923C25F41009EF5589121B3ACADDB1A8A25BD84C45856D97B84D1E815BAE0BB9C75C99129832E5AF458F6A5F5D96A091EA062925654F256A667EDC5F50A26DA01A368C760288C02405FE2D12F5FCAD358F6E3038529A4A02530134A9F33B1376A85AB01A8F592F1194DBE0E50292FDE1F3B4E173612ACD662AEAD7D5C86D74050E9301620D2BE1E9DA1C4444617F5A85FAADB322B75AAA5368647F2B2ADFBF6FA8987103171DF90F7F544DBFF0F56E909D002C092AE0F33C6F9D15A475F0A7EFBF2F3292ECFBA272E76375C54C47DB4461A20C1C67F4B1E1244B61FDC98A51FE2E96F4A818FB73EEFE6F0B664797B109912D263715F405FB2444556A5FF820F4AD0A022E75E78F01333FDF818E42254A53C600772D113DE80AE6A82451DF317F2B8CA614300D473B1DB56D8559029E5CA089B20DA9439DACF97C3DFBC9D8F7B6E64961DD9400E67DC3A70E856EAF084D7BBA4BE59A31C05F574AE7A80BB0E1D52451ED6F7ECA3DC4DFBE473A2B09CCE2CB0EF77C74BEB044A3D149A06552CAD35582F3F9EA56D1AE353966F31A312EC5C1DCF9B8F8A831637F31A70CB8F8755F6F44CA53C21CF4051EC7529354155368A852C05437EAC88B0C77810272C9AD2113AE9494301590FFD20ABA11A4FDE1933BB9EDA6243077DE371C354EBBDD7B64C08252CB198DDB27802109E67A0354F3AC5D8002A056CF0AA0917D7FA770B9F3B1E153A3A1384988A736FA853140EBD31C0AE2F0BDEFAA24C2FE7CE74EF628A5825974CEEBC68B6A05D3E85AF3FA56C26944F59DFB02AF533C8176AC39C094AC99C54685F062BB58D11938AFB1572B8DC2954F916A9EB7AFB6AEC281AAF6EF9EE400837523BB5344C064EA675C2E575B4907FDC21B6013E90EB5E2F3C5635535C090F0397D72E77DCEB18A82F9D8E09C518CCF8F47A1B88BD46E37B3E2F50537A4345D5FF310F91EAEB6A2F72EF8B3DA3AF45BEEB18A8359742A7433C5A649510CCA7530E1349E2AFB268D812FED0249A8B4375BBF0ACCFBF70DD53BD330314D4C4C0C4C14AB076AC19FBCBEC9349EC209BE1766EF98C4A162354FDE6713F55B09601ECD4C17CE7FD372616E0D4CD8727D2591EB3EC6E7FB322B91D6D6B39F73A0290A06E682BD6273644A2E4DB5CA2EA38F4BE7290CD3F93BFCD6A51D179059E6B71C6864EF0B4B43B5B30311509A4CD4BAE85DAF71F9242DF0E9CD1C762889EC23A232A518988F0D2F8F7528CDED28ED88FAB973AF3168BE4AE309A9C6F316F869160A3075F6DBC7ACD18A80695874EE5D96CC12F074E962BABC177C3A4F9590F3055002DA9E24AA7D9669B825988F0D474E7F891461A9AD0D51EBDE8BF4F90939D40B5FE06D4C5C46A11348FB3E66EAA620988F10648EF74AF725907903B5DBE5E5C257D76959961EACE60D5A5F129EC876C06F99680A830196148A3C5BC0F93686B9B52EEF643883A72B8835EFC8820E17743CB43664A02902E693535D3B70AB52CB81D16C9B3378D2C30C15F812AB120BAA62A79944C93E1692EA27EA8EBCBB32B94B7445B9EE0D6AAFD2FDE9FA1575E1BBF750DC5A13F66DD886E448EF512908A661B13BC7BB94223C45E9DDAEDE4C77AAAC84658B27B9EB28C8DBA5743485C034347C9A19BF8D2F617F1AE0C16868BD3E2C2D61FD066DF4BD7B98220ACA7EECF4A7060996829A01F39D9E3114D8E6CCBDF7C9315E2FD7779521615828389E3537EF2769DA6F9EDD671A1A24031604F3B251D8922FB9287426D300D7655CD167F1740DABAAD7193CB5BF79521A988686C54F331D4557B5D961CF65D9CD722714F8D09CF02C8DA7D87E15F5E96383044C43BED2F06967BA23DF1B83FCA21EA082C617DA70A6E84F567CF237C2FB16519A87971A408421F38201C5383BC0970A6D2CE6DE6C84B59CF7C2924553E51578775D264FED833F2FA2D18A8339C6BFC0B8F5414D7ABD749666C2273041795EEFC762FB424155730D23D14C433E597C793C737B929070B06099D4EBB3D0A075421D6627267C109AC19F16C521F383A9765EDE3AE291D9C940AF1B57FAB279BA565EF8E2AB993C3DB41607B3F8A9F12BAC175BB0CBF202F2AB2CC55CEBF95E486B324DB8F9F4C96211308BD5CE637FBED75D85C5D006EE14CC7627F0A735A3EF17F1B59828CD316671B108984F8DB9DEF19744938EDAF6E6989DC09FB80B9C4864C899B330984570A5B4DF12DD460CF4A4F182BECAD2CC95DEDE6B442F9AD34AF36C15F369B120984FDD8D0688A6B78DBF3804D7D28CD148F765C66094D59C034F404D555A693E751602B358BD344E48CAFB66326F41AF58906F5FE5E029CC7973F134BB56BD9817CCE222AC69BF8E22326F7317C6C9AC791B72AC04387DE0D9F3FDE6E6F42C0B1C6A118359CC2E8BD52FA767BECE95B03B71F485713BDBB7C19FCC419CD564C87E15530D68167383F9D4F8558E8404D27793815B07DFCE4153A5DEE545F3D36A46691FFC84D0E40003F2A8B103A9FBD607AAFCF3EE5A3E68ECD5E6A00978BA307A5ECF366748EB3038148059CC21473B338689AFE0079E81005CDB46475E80CD6439D3AB57AF121B2F8CBEF2746F42790D84E1A6C5C55C60AA9D90AFE57D6F9CEF40591EE485F3B59C965F31BED8C89A99E0B8BE7F7FD9F3E3F3941F099E351BEB67F28039EA462475DEEEF047DDD1A8BF96E523F466AF2FC887C5DC1787BB57AFAEEE23E9EBAF798BD795A21FA10DD0FD9AFE1BADB2A93A1798EA978DEAB612B6E7A502798C8BB3F0110B3DE47138B66969D6190EBFD22320373520D27D114822AA6AFAFB6FCC5A7AE57CA7A2A93A1B0C6031E974A56F3DE0ADA40E202711192A73A81C1E96EFBB96D073F54AAFBF7FD35FB33F4B3849BD64596DAEEA3FB8CFB3651E9FD168ABCF01A6BAE96547E62F910B895BB717ADE52C110B413264D9D0A79C072DF94127FAFE9A58F36C6BDA46DAEA6C55CDCD818585A7542AB9CFD8555F91030CCA634A5C1380030D00390489C371C8D211BD7473F124D1D767EECF20A70ACD4D889D88760823012C729F371798EAA6A53DC574890C450D0CBF1101353B3C652CBF91B6F580B572D35FD5BC2A61064B6B734DFFC9060FC6A512A08062BC360C26FDD78AD58F8E75E3F3E83F7A1590BDBD3DDD1EF8B0C51C610F3D8E32E046DC8FA9BC26AF54FA40801CBC113D4B1822EF0EC04E6ECCA049550A09580C524C5353E6CF9C8E604950E4DD0970E3E228DA72630124A092484670036EFA36B2C841BB20404EBF798392EA448062ABAF47DE948EA5C9A906F770EFB9737DE0062AD15A864F981110CF216BBEC6F14CB23B7F9540AED38AC91176C5B1CCC66A6E12E674760089D7DB85A100960C304D474E932E8A5FAD9143FA2F3613B7C14547223490E339A4CD57C9F75C04D3FDBEFB7D37356027ABD2973AE82F086C6660270389912041509AB2C1BC9C99CE13EF06103934CDDF884832F67AFB0087B9BFBFA61FB94B9AEF607636B4740E2436AC1382A43A034C1364E1D3EEA8E4FF0F21810B20FE5A8ED727E8C3328FCA51C69A2B93068BE25AF8FA5A7FD05F5385E29A4427289A80EB24FAB4F472363B194832C0343539C7DDD13DB744D056BDE252E1EE74D110EB59E4039E21FEE9550A09F2E083BEFB0738C46276D09BC856FC1A7BB53506EC6055E662872091FCB4280DCCD1CEF179DB8444D0AF376B398EE3A1471CA11C8796D4B483269D93930373C46201ADC4A4EC90C0567303EC1C66F88EA013C14ED27E92269362712A14E39813F738A207F482C8499C5886488F8E328B480FB2D9ABB03E7162E6C1AFF07BBF56FC1A1DBD4D5F6D45AE733F8B1DA3E83BF5824E3244FA639E4FEA4BEC3C881EB411E2F6B771981CA1430FDD4750E008AB3F392048E0EE187119CC0DB003D34EFF412497C50A48327FD723FCEA4A0AA6F1984C4A285F838C80A3CD64D2118265C082C97915460A41EC0073C2706F4472F6811DC84E36B4540E3B49B1931B8BF43757CE193411CC43B0EF3070FCC15308B0F7442088EFC92BAC17C897008B604344DE3D6CC5E17E16E704F7B559169BB2939CBF75122505E6C8A0D34DC3224CA76E4306CB1E26C7223D925725E1C40142B25C2685790FB383264088B159169B9F9DBC602A9C904EB7217222372933497D37E3DA462201E4982DECA6C79176D3D783C841EC48BC5825F11D12EE8B41918071768C23CF017250E29839A77675AD53E0C680A42CD3168CC6C063C809D2D85149E69D529148C0542C217278FA301D08F146F86E36ABD94CB1DB0E7986C210CE8B327AC39C85C4984452229424988A8A1D4ACBA5F49FD1217469E582015F96A7629C5DC6E01F804402A6DEB6DBEB93677D6BD1072AEA77BB8C3EB8916695F866BD0DDDF9FD48926060B02EAFCF47864A854AD1072A9A84FB6930C970151536B8958DB2E2D65052606CA9C1507FEBBBBB3B3B3B8F2A0477ACA8AFB7798DC871A4564960229C46F42C7972173DF9E8D19188240F9EA34F2FB1A4FDCC5346B054D8C86046E3C58B359792A38828954B4F9C4D8F18A592517293DCCA8554614EA528E7F02C007971EE622851940CF3D3D192D08051323F25511DBD5C82EBA9764B4F1E099064F81BE06FEE357A2FCE21B9A5D9E58585CEB2CECE85856516D229A5521B5A1E5A0E2D872CCC7AD2882A9A18CB726812159A5BF776BD58A12C341DDA84474116562013A35E2AE965DC86E5F8A526ACC7A3978C1286E0D85028B4EC823E598EE629A513DF9411558319DABA76D7283AD4B935B715DDC2BF6B88A25CC6DDC93DA54788746A9792665971C484FE39825F17708C6D87E1E9E5ADCBCB11132AF8E7CA2683F211B535A2DB1BF7ABD5563B1EEEC8094842CB03218603653156EB4437ACD33B17002A06D324A2A95FA2E8B2B9B9CE01AB15144B21E55ABB8F1F281E504FD991E907D3D330570C689788A1C0138F940B23706DDAA4A39CE73CBB758941EC75A81BBBBB1B1B8F8F8F95CC0EB535E3843FBB279414B2BF970CC52E2CB8283B126206781035B584BFA24CECFB88E117E6E6DA00056AABB5F33CC5DBED4AA6716923111A99999EC6685C5AA7F8008C34822E9A3A28865F1E1951C0798795B2C3737040276666979E3B465026AC9472B7A2E209C5767632A873243C80E17984CAAAA4760818110B650128941D61E1E995ED5E24C11520D46E3E58C0A3A281759CFDA5E0434E5A0063301F2C63288A714A3B19ECEDBD208F52C173FA12EBA5DB6AE76CF54BFCF296A0159EE236837884ED498EB76BA91D6C87029823253DB7A5042880850E621F2712E8DDA46F3A471E8868F668A47004E69C9E4360148A09BD65CE8415A7D66E8ACFF9E4BE80712584C040FACAF06B5DE7FC42A7D24E6432901AC117D8E6266D36A41A19EEB982012C768C45CB3954F234F1D05BA669514CE3BCF2081BFC1A3B62C26098A7F4A5028399A1388764141FBBECC6244D28F9E03A85B05048337C59FA0072E305E4184833D84D9FF0735B8822A5D24E075472291A158011BE38A6C2A4E6190C664500A3535A2C025A458785F5A5B0F8B8852880B1824768273956C4A25D4E1F415CF763CD80500B73945D89157348E6269CA7F804CD902F3E33A32036022E555FBF3B993494B2C3904941D0CCD374C0274A80EEF4A33586D54A999F5A3AAD14C662A71D62DE250CE113C010CD2CD17303768A28C6A122819D086ABCC9A251150A03D38194831DBCDEB6CE2DFC136353F31E07BD40D0C0EA82B304C5677BE92D4337E8C5CAD81307A1058A4A2A2635828FC4FD144D4EE5F21C21496967D12E12495340202A1B7DCB21E235137D1C1E52A170F14EDBAEE84CDDBC07D60D9BA26E665CBC751D9E84092B486F218B0196EC4F239D8CA018DE23970BF9071E0189B0A44360187EAB13636194DA4344A0176529F5369CAB782F58ECD90A0013E924C6A3E3F8DD5DD199AC16B4B8A35D97F81EB85D2DAFDC418F7AD7583F518C52FB945D50122CA07B500599F56D64087C5E41C0D42BE92D17014381A193DD129CA980D8BA2EE84E62A856CB90E0578A715A79CECE91CB0C8DD7772CE736291E60342F287E093D3919F25B41318C95DA781A1A10B0D859B48167930E512FCE7732F00B9E9E23E11FC0F4FABC843F22F5F55DBB04018C6A71DCA3DD261275792D7126D30CC5CA516AE538A4D58AE9070FE07830C320ABEAE2960D080BCC8C7D37217112B0B3D85C2543542050154930EC9608860E08869D6C6A0B126752EC51B44A35C40A21C51039C5CE649AB70FC97D184E193D30AD7840C4A56500CC42ADD5EA62C064F437214600A3DD449B89D221522283EF6E81100060189715C0A429068139A74D64548A053E58ECC50A40B340C03442EFC843D1F297E574D304CC8C55BBD4452F7423C5704A7BE26699116647FB66BA62D2C1D83018A41720D77291DE126C6C9225CC346A87101BA2DF282E49FC9DD0962137C5681C43F43C4253D178DCC1D06B7427C202999936019A11666AEDA431FDEBA683F17274A78B624031102983192CD5777121326A378A8730A005D933D60E990CF820B81F4A13D1DD43FA18B01C37825066BA165B0C44D20DB019024669E72E0A82D9A617069066C0F4B5935D199A01E68907810AD0ECA0F258FCA9A90A4D0601230A1846623887F4F803C0D2DD6D6012000625510066E8900D112CF0C78B7C265321834812D8641750DA05799732B226850D7E776EE92491CEAAEDC5C11B0C356A1214832CC9D28B5779282B47688642D32218760093A4B46B3D7099B2936C8AA777D335F3887126358396056CA88D80E9E622CC4EB29573494945225185A8021FB18D43764F214EE26ABB99E7D67650584137E51E3674798C92986EEA806DC3582041BA07319A11323B86E797C4218E1E39219CA0B92E0506E64216A04CA07C7182D7A28CDD8A828E8566B796E9A8301F82DB0B96CAB20A21F883253D8DB028A5B6AEADADAD4CD216760E2754DD8CF620644558000C8AD19F691A4F388C15BD0B827F975000822116B6D82521D0209B31CAE50E9A467A01300F1E9CA3AD08C8DF973BB720096FA3750A94E976D839300E2F26C3C186C489D1BA71753A72B905593E0DCB0A76616E4401C60B492F0F4B050286CCD3AACF3C020361C75AAB5E08417B960D2D6CCD8DFC534D397130AEA89709AB53F04AA5B51BF2E8070F8474D7343262D28D1FD32C79DB6EB00FA189822C3CF1348D5FA9331B4FD94B135A135CE2058402190C24B57C998375098AB1B37821EEB120056263E8D0294CB8B9697AA61132609B08061B0DB4BD07DF0DE171A2CCFEB803770A6133C1CD8FAB21AC2BB5285AD984B5ACC3B2D0D1A86EF41BA88D034EAD864766401E1C83992124962187EA1EED5292C951CBE22C4DE5F84CF3882084C779FCE8B8111AC3085A588D25C1D844B7442F8C205FE771A0847FB43C3DB94D5B68C8E2B55A2DE4295E34D192653E7C4D22F4E13207CB016C0F4A94EF5B848DC5320B2DB6D994FBC808AA7BCBE822594B22985A8A9B0C42A0C56830189B37B98DE0F0946D2F4F2259D9DEEE0D40170E0F91324F0085CE7AA21B404304EDFAF93CBDDB2BF8A1C9CDE45E920A3FF80E370AE0142A79BD6C735218A2B73780F33C9227A0B94940236E03A924F9A94A2278E6AF4FC79EF540FAF5E493681B4EFA9034C586BB24B9C29AC981462527874AD2B90FCFB638C5C942A31252ECF4D1245F03257E6943A8C401483A9ED20CEA5FD8D6C08D547269FA2EE9514889081AB974DC64D7E20E8FCF976C81B190104DB69B525F96B485E904F74B34432CC1684C2E08841504EE542E6EDB8819A080C627AE48E44293D41A0562A357C8E6C99F64B74D1822630463AA6399D83F8283F36F614F089534F18AB92281EE4DBB997A0AB5C4F9BCD022B9374EE078C99A0335F5919BC22EB1148CD058C8D6BD4692B47B5357848D33495BF186573C139F22DB8EC916A927B347101A6781A9179603E8015CD94481BFF0BFF5196DC5EBE2435D36E1219C63E77A52B89A6CDC95DEAD148CA4BDD8A398BD8BE7192DC5EBC9876C690D733E6993B4CEB89705E6CF947F83C927FF06934FFE5F82D9D9FD033AF95F723AE937257DFF050000000049454E44AE426082" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="25" />
+</IMAGES>
+</METADATA>
+<PLUGINDATA>
+<PLUGINDATARECORDS>
+<PLUGINDATARECORD PluginName="HTMLReport" Obj_id="-1" DataValue="nil">
+<PLUGINDATAPARAMS>
+<PLUGINDATAPARAM Value="SelectedTables=ProyectosTicRD;Provincias;Region;AreasDesarrollo;ClasificacionEDom;AlcanceSectorial;AlcanceTipo;Zona;PublicoBlanco;EstatusProyecto;InstituPatrocinadora;InstituTipo;" />
+</PLUGINDATAPARAMS>
+</PLUGINDATARECORD>
+</PLUGINDATARECORDS>
+</PLUGINDATA>
+<QUERYDATA>
+<QUERYRECORDS>
+</QUERYRECORDS>
+</QUERYDATA>
+<LINKEDMODELS>
+</LINKEDMODELS>
+</DBMODEL>
